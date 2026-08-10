@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="white HUB - A premium, monochromatic showcase of Heisenberg-class digital solutions. Minimalist, responsive, and secure.">
+  <title>white HUB</title>
+  
+  <!-- Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. INTRO ANIMATION SCREEN -->
+  <div id="intro-screen" class="intro-screen">
+    <div class="intro-content">
+      <div class="intro-image-wrapper">
+        <img src="assets/Miniwhite_caneca_preto_e_branco.png" alt="Heisenberg Portrait" class="intro-image">
+      </div>
+      <h1 class="intro-title">
+        <span class="letter">w</span>
+        <span class="letter">h</span>
+        <span class="letter">i</span>
+        <span class="letter">t</span>
+        <span class="letter">e</span>
+        <span class="letter space">&nbsp;</span>
+        <span class="letter">H</span>
+        <span class="letter">U</span>
+        <span class="letter">B</span>
+      </h1>
+      <p class="intro-sub">SOFTWARE ENGINEER</p>
+      <button class="intro-enter-btn" id="enter-btn">INITIALIZE SYSTEM</button>
+    </div>
+  </div>
+
+  <!-- 2. MAIN APPLICATION CONTENT -->
+  <div id="app-content" class="app-content hidden">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-logo">white HUB</div>
+      <div class="system-status">
+        <span class="status-pulse"></span>
+        <span class="status-text">SECURE CONSOLE // ACTIVE</span>
+      </div>
+    </header>
+
+    <!-- Project Carousel Section -->
+    <main class="hub-main">
+      <div class="carousel-outer-container">
+        
+        <!-- Navigation Arrow Left -->
+        <button class="nav-arrow nav-prev" id="prev-btn" aria-label="Previous Project">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Carousel Frame/Viewport -->
+        <div class="carousel-viewport">
+          <div class="carousel-track" id="carousel-track">
+            
+            <!-- Slide 1: Blue Sky -->
+            <div class="carousel-slide active" data-index="0" data-link="https://github.com/Saikozinho/Um-simples-checklist" data-title="Smart-Check-List" data-desc="This a simple checklist. No more." data-tags="JS // CSS// HTML">
+              <div class="slide-image-wrapper">
+                <img src="assets/github-icon.png" alt="Smart-Check-List">
+              </div>
+            </div>
+
+            <!-- Slide 2: Empire Business -->
+            <div class="carousel-slide" data-index="1" data-title="Coming Soon" data-desc="This is the biggest project I've ever done, soon I'll be presenting them." data-tags="Coming Soon">
+              <div class="slide-image-wrapper">
+                <img src="assets/github-icon-lock.png" alt="Coming Soon">
+              </div>
+            </div>
+
+            <div class="carousel-slide" data-index="2" data-link="https://www.youtube.com/@WhiteBR-m9s"  data-title="Youtube" data-desc="My channel" data-tags="youtube">
+              <div class="slide-image-wrapper">
+                <img src="assets/youtube_icon.png" alt="Youtube">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Navigation Arrow Right -->
+        <button class="nav-arrow nav-next" id="next-btn" aria-label="Next Project">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+
+      </div>
+
+      <!-- Active Project Info Block -->
+      <section class="project-info-section" aria-live="polite">
+        <h2 class="project-title" id="active-title">SmartCheckList</h2>
+        <div class="project-tags" id="active-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JAVASCRIPT</span>
+        </div>
+        <p class="project-description" id="active-desc">Dashboard with checklist system.</p>
+        <a href="https://github.com/Saikozinho/Um-simples-checklist" target="_blank" class="project-link-btn" id="active-link">
+          LAUNCH PROJECT
+          <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-left">
+        <span class="coordinate">COORD: 0.0000° N, 0.0000° W</span>
+      </div>
+      
+      <!-- Contact Drawer Section -->
+      <div class="contact-section">
+        <button class="contact-trigger" id="contact-trigger" aria-expanded="false" aria-controls="contact-panel">
+          <span class="trigger-icon"></span>
+          SECURE_LINE.TXT
+        </button>
+        
+        <div class="contact-panel" id="contact-panel">
+          <div class="panel-header">
+            <span class="panel-title">SECURE_COMMUNICATION_PROTOCOL</span>
+            <button class="panel-close" id="panel-close-btn">&times;</button>
+          </div>
+          <div class="panel-content">
+            <pre class="crypto-decor">
+-----BEGIN WHITE HUB SECURE LINE-----
+STATUS: ENCRYPTED
+ALGORITHM: AES-256
+DIRECT MAIL ROUTE:
+            </pre>
+            <a href="mailto:saikozinholegal@gmail.com" class="email-link">saikozinholegal@gmail.com</a>
+            <pre class="crypto-decor">
+-----END WHITE HUB SECURE LINE-----
+            </pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <span class="copyright">&copy; 2026 WHITE-SYSTEMS INC.</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
